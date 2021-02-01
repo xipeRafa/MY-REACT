@@ -1,35 +1,7 @@
 import React, { Component } from 'react'
 import PubSub from 'pubsub-js'
 
-const Header = () => {
-  const subtitleStyles = {
-    fontWeight: 'bold'
-  }
 
-  const headerStyles  = {
-    margin: '0.6em',
-    borderRadius: '0.3em',
-    border: '1px solid #d2d2d2',
-    padding: '2em 0.4em',
-    fontFamily: 'monospace',
-    fontSize: '17px',
-    textAlign: 'center'
-  }
-
-  return (
-    <header style={headerStyles}>
-      <div>
-        ( Cualquiera )
-      </div>
-      <div style={subtitleStyles}>
-        Variables Globales
-        <span role='img' aria-label='flame' >
-          🔥
-        </span>
-      </div>
-    </header>
-  )
-}
 
 const boxStyles = {
   padding: '0.5em',
@@ -96,8 +68,6 @@ class App extends Component {
       <div style={boxStyles}>
         <button onClick={this.handleClick}>
           PADRE
-        </button>
-        <Header />
         <Hijo />
       </div>
     )

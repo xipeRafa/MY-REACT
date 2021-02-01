@@ -3,12 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 //HOC - High Order Component
-
 //DECLARACIÓN
 const withImpuestos = (Component) =>{
   return (pagos)=> class extends React.Component{
-
-    state={
+  £ state={
       sucursal: pagos.sucursal,
       pago: "$" + pagos.pago,
       impuesto: 

@@ -19,14 +19,8 @@ class InpuntNoContolado extends Component {
   render () {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input
-          type="text"
-          placeholder='Nombre'
-        />
-        <input
-          type="text"
-          placeholder='Email'
-        />
+        <input type="text" placeholder='Nombre'/>
+        <input type="text" placeholder='Email'/>
         <button>
           Enviar
         </button>
@@ -40,8 +34,7 @@ class App extends Component {
   send = (data) => {
     console.log(data)
   }
-
-  render () {
+ render () {
     return (
       <div>
         <h1>

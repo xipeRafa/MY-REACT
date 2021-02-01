@@ -31,20 +31,20 @@ const App = () => {
 
 /*   se renderea con la notacion de punto objectOf.variable----
   se le saca copia con ...spread, 
-                        variable
+                        nuevoDato
                         (dentro de las funcionesEvento) */
 
   return (
     <div>
-      <input
-        type="text"
-        value={state.title}
-        onChange={handleInput}  
-      />
+      <input type="text" value={state.title} onChange={handleInput}/>
+
       <button onClick={addClicks}>
         Clicks ({ state.clicks })
       </button>
+
       <h3>{ state.title }</h3>
+
+       <input type="text" value={state.title} onChange={handleInput}/>
     </div>
   )
 }

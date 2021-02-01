@@ -24,6 +24,6 @@ class App extends Component {
       </div>
     )
   }
-}
+}  // map.keys(), map.values(), map.entries()
 
 export default App
